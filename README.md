@@ -1,4 +1,3 @@
-Of course, here's the comprehensive `README.md` that includes the requested sections:
 
 ---
 
@@ -19,13 +18,13 @@ Designed by Ginhinio Castelen [(BUILDDIV LTD)](https://builddiv.com).
 To add Fluid Drawer Native to your React Native project:
 
 ```bash
-npm install fluid-drawer-native
+npm install @builddiv/fluid-drawer-native
 ```
 
 Or with Yarn:
 
 ```bash
-yarn add fluid-drawer-native
+yarn add @builddiv/fluid-drawer-native
 ```
 
 ## ⚙️ Requirements
@@ -37,7 +36,7 @@ yarn add fluid-drawer-native
 
 ```jsx
 import React from 'react';
-import { FluidDrawerNative } from 'fluid-drawer-native';
+import { FluidDrawerNative } from '@builddiv/fluid-drawer-native';
 
 function MyComponent() {
     const [isOpen, setIsOpen] = useState(false);
