@@ -5,7 +5,7 @@
 
 # 🌊 Fluid Drawer Native
 
-Fluid Drawer Native is a highly customizable, fluid, and native-feeling drawer component for React Native. It supports touch gestures, dynamic height adjustments, and integrates seamlessly with device keyboards.
+Fluid Drawer Native is a highly customizable, fluid, and native-feeling drawer component for React Native. With support for touch gestures, dynamic height adjustments, and seamless integration with device keyboards, this component ensures a premium user experience. Additionally, its lightweight footprint of just 16 kB ensures minimal impact on your application's performance.
 
 Designed by Ginhinio Castelen [(BUILDDIV LTD)](https://builddiv.com).
 
