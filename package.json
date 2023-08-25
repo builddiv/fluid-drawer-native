@@ -1,0 +1,39 @@
+{
+  "name": "fluid-drawer-native",
+  "version": "1.0.0",
+  "description": "A highly customizable, fluid, and native-feeling drawer component for React Native. Supports touch gestures, dynamic height adjustments, and integrates seamlessly with device keyboards.",
+  "main": "index.tsx",
+  "keywords": [
+    "react-native",
+    "drawer",
+    "slide",
+    "fluid",
+    "animated",
+    "modal",
+    "bottom-sheet",
+    "react-native-component",
+    "keyboard-aware",
+    "pan-responder"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-native": "^0.72.0"
+  },
+  "devDependencies": {
+    "@types/react": "~18.2.14",
+    "typescript": "^5.1.3"
+  },
+  "author": {
+    "name":"Ginhinio Castelen (BUILDDIV LTD)",
+    "email": "admin@builddiv.com",
+    "url":"http://www.builddiv.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "YOUR_GITHUB_REPO_URL_HERE"
+  }
+}
