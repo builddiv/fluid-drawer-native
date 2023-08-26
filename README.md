@@ -1,11 +1,11 @@
 
 ---
 
-![BUILDDIV LTD Logo](https://github.com/builddiv/fluid-drawer-native/assets/143026621/9632cd20-dc9a-4373-aa0f-fdd08b0be43b)
+![BUILDDIV LTD Logo](https://github.com/builddiv/fluid-drawer-native/assets/143026621/583950b9-3e22-4c09-9d45-b37da8241f65)
 
 # 🌊 Fluid Drawer Native
 
-Fluid Drawer Native is a highly customizable, fluid, and native-feeling drawer component for React Native. With support for touch gestures, dynamic height adjustments, and seamless integration with device keyboards, this component ensures a premium user experience. Additionally, its lightweight footprint of just 16 kB ensures minimal impact on your application's performance.
+Fluid Drawer Native is a highly customizable, fluid, and native-feeling drawer component for React Native. With support for touch gestures, dynamic height adjustments, and seamless integration with device keyboards, this component ensures a premium user experience. Additionally, its lightweight footprint of just 18 kB ensures minimal impact on your application's performance.
 
 Designed by Ginhinio Castelen [(BUILDDIV LTD)](https://builddiv.com).
 
@@ -66,8 +66,9 @@ function MyComponent() {
 | handleVisible      | boolean        | true           | Whether the handle of the drawer is visible.                                                   |
 | handleStyle        | StyleProp      | -              | Custom style for the handle.                                                                   |
 | drawerStyle        | StyleProp      | -              | Custom style for the drawer.                                                                   |
-| backdropStyle      | StyleProp      | -              | Custom style for the backdrop.                                                                 |
+| backdropStyle      | StyleProp      | -              | Custom style for the backdrop. Keep in mind this is also the main container for the component.                                                                 |
 | backdropTouchable  | boolean        | true           | Determines if touching outside the drawer should close it.                                     |
+| topTouchAreaStyle  | StyleProp       | -            | Styling applied to the gesture-sensitive area at the top of the drawer, used for triggering dragging actions.   |
 
 ## 🤝 Contributing
 

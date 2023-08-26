@@ -10,12 +10,12 @@
  * Author      : Ginhinio Castelen
  * Company     : BUILDDIV LTD
  * Website     : http://www.builddiv.com
- * Version     : 1.0.0
+ * Version     : 0.7.0
  * License     : MIT
  * 
  * ===========================================================================
  */
-import react, { useRef,useEffect, useState } from "react";
+import React, { useRef,useEffect, useState } from "react";
 import { Animated, PanResponder, StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle,Platform,Keyboard } from "react-native";
 
 interface FluidDrawerNativeProps {
@@ -24,6 +24,7 @@ interface FluidDrawerNativeProps {
     children: React.ReactNode;
     drawerHeight?: number;
     handleVisible?: boolean;
+    topTouchAreaStyle:StyleProp<ViewStyle>;
     handleStyle?: StyleProp<ViewStyle>;
     drawerStyle?: StyleProp<ViewStyle>;
     backdropStyle?: StyleProp<ViewStyle>;
@@ -39,6 +40,7 @@ interface FluidDrawerNativeProps {
     handleStyle,
     drawerStyle,
     backdropStyle,
+    topTouchAreaStyle,
     backdropTouchable = true,
   }) => {
     const translateYAnim = useRef(new Animated.Value(drawerHeight)).current;
@@ -124,7 +126,7 @@ interface FluidDrawerNativeProps {
     }, []);
     
     return renderComponent?(
-        <Animated.View style={styles.container}>
+        <Animated.View style={[styles.container,backdropStyle]}>
             {backdropTouchable ? (
                 <TouchableOpacity style={styles.backdropTouchSurface} onPress={onClose} />
             ) : (
@@ -136,8 +138,8 @@ interface FluidDrawerNativeProps {
                      { transform: [{ translateY: translateYAnim }], height: drawerHeight },
                     drawerStyle,
             ]}>
-                <View style={styles.drawerHandleContainer} {...panResponder.panHandlers}>
-                        <View style={styles.drawerVisualHandle}/>
+                <View style={[styles.drawerHandleContainer,topTouchAreaStyle]} {...panResponder.panHandlers}>
+                        {handleVisible&&<View style={[styles.drawerVisualHandle,handleStyle]}/>}
                 </View>
                 {children}
             </Animated.View>
@@ -161,7 +163,7 @@ const styles = StyleSheet.create({
     },
     drawerHandleContainer:{
         width:'100%',
-        height:40,
+        height:30,
         borderRadius:15,
         alignItems:'center',
         paddingTop:5
